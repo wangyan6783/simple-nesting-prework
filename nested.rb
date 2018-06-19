@@ -60,28 +60,6 @@ def dennis_ritchies_language
   programmer_hash[:dennis_ritchie][:languages][0]
 end
 
-
-  describe "#adding_matz" do 
-    it "operates on the programmer_hash and adds a key/value pair to the top level of the hash, returning the newly-added-to hash" do 
-      expect(adding_matz.keys).to include(:yukihiro_matsumoto)
-    end
-  end
-
-  describe "#changing_alan" do 
-    it "operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash" do 
-      expect(changing_alan[:alan_kay][:known_for]).to eq("GUI")
-    end
-  end
-
-  describe "#adding_to_dennis" do 
-    it "operates on the programmer_hash and adds 'Assembly' to Dennis Ritchie's languages, returning the newly-added-to-hash" do 
-      expect(adding_to_dennis[:dennis_ritchie][:languages][1]).to include("Assembly")
-    end
-  end
-end
---------------------
-
-
 def adding_matz
 # add the following information to the top level of programmer_hash
 # :yukihiro_matsumoto => {
@@ -107,6 +85,26 @@ def adding_matz
 
     
 end
+
+  describe "#adding_matz" do 
+    it "operates on the programmer_hash and adds a key/value pair to the top level of the hash, returning the newly-added-to hash" do 
+      expect(adding_matz.keys).to include(:yukihiro_matsumoto)
+    end
+  end
+
+  describe "#changing_alan" do 
+    it "operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash" do 
+      expect(changing_alan[:alan_kay][:known_for]).to eq("GUI")
+    end
+  end
+
+  describe "#adding_to_dennis" do 
+    it "operates on the programmer_hash and adds 'Assembly' to Dennis Ritchie's languages, returning the newly-added-to-hash" do 
+      expect(adding_to_dennis[:dennis_ritchie][:languages][1]).to include("Assembly")
+    end
+  end
+end
+--------------------
 
 def changing_alan
 	programmer_hash = 
