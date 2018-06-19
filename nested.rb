@@ -60,11 +60,6 @@ def dennis_ritchies_language
   programmer_hash[:dennis_ritchie][:languages][0]
 end
 
- describe "#dennis_ritchies_language" do 
-    it "operates on the programmer_hash and returns the value of Dennis Ritchie's language as a string" do 
-      expect(dennis_ritchies_language).to eq("C")
-    end
-  end
 
   describe "#adding_matz" do 
     it "operates on the programmer_hash and adds a key/value pair to the top level of the hash, returning the newly-added-to hash" do 
