@@ -86,14 +86,6 @@ programmer_hash[:yukihiro_matsumoto][:languages] << "C"
     
 end
 
-  describe "#adding_to_dennis" do 
-    it "operates on the programmer_hash and adds 'Assembly' to Dennis Ritchie's languages, returning the newly-added-to-hash" do 
-      expect(adding_to_dennis[:dennis_ritchie][:languages][1]).to include("Assembly")
-    end
-  end
-end
---------------------
-
 def changing_alan
 	programmer_hash = 
  		{
@@ -134,3 +126,11 @@ def adding_to_dennis
      }
 
 end
+
+  describe "#adding_to_dennis" do 
+    it "operates on the programmer_hash and adds 'Assembly' to Dennis Ritchie's languages, returning the newly-added-to-hash" do 
+      expect(adding_to_dennis[:dennis_ritchie][:languages][1]).to include("Assembly")
+    end
+  end
+end
+--------------------
